@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #hour{
+            margin-left: 400px;
+            border-radius: 360px;
+            width: 5px;
+            height: 100px;
+            top: 150px;
+            bottom: 100px;   
+            position: absolute;
+            transform-origin: bottom;
+            background-color: rgb(12, 12, 12);
+            animation-name: hour;
+            animation-iteration-count: infinite;
+            animation-duration: 216000s;
+            animation-direction: normal;
+        }
+        #minute{
+            margin-left: 400px;
+            border-radius: 360px;
+            width: 3.5px;
+            height: 150px;
+            top: 100px;
+            bottom: 100px;
+            position: absolute;
+            transform-origin: bottom;
+            background-color: rgb(12, 12, 12);
+            animation-name: minute;
+            animation-iteration-count: infinite;
+            animation-duration: 3600s;
+            animation-direction: normal;
+        }
+        #second{
+            margin-left: 400px;
+            border-radius: 360px;
+            width: 2px;
+            height: 200px;
+            top: 50px;
+            bottom: 100px;
+            position: absolute;
+            transform-origin: bottom;
+            background-color: rgb(250, 12, 12);
+            animation-name: second;
+            animation-iteration-count: infinite;
+            animation-duration: 60s;
+            animation-direction: normal;
+        }
+        @keyframes second {
+            100% {rotate: 360deg;}
+        }
+        @keyframes minute {
+            100% {rotate: 360deg;}
+        }
+        @keyframes hour {
+            100% {rotate: 360deg;}
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
+    
+</body>
+</html>
